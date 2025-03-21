@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #fffcf0; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #493c3e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #e43c5c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -151,6 +151,8 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  opacity: 0.8;
+
 }
 
 .header .logo {
@@ -177,7 +179,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: #2c2c2ccc;
 }
 
 /*--------------------------------------------------------------
@@ -446,15 +448,16 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #000000cc;
   font-size: 14px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   position: relative;
+  opacity: 0.7;
 }
 
 .footer .footer-top {
-  padding-top: 50px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding-top: 40px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
 .footer .footer-about .logo {
@@ -547,9 +550,9 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  /* background-color: color-mix(in srgb, var(--default-color), transparent 95%); */
 }
 
 .footer .copyright p {
@@ -606,7 +609,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #8fb8a5;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -620,7 +623,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, #8fb8a5, transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -834,7 +837,7 @@ section,
   margin-bottom: 30px;
 }
 
-.about .content .about-btn {
+.about .content .chatbotbtn {
   padding: 8px 30px 9px 30px;
   color: var(--accent-color);
   border-radius: 50px;
